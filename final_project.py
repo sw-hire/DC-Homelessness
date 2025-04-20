@@ -1,7 +1,7 @@
 import streamlit as st
-import geopandas as gpd
-import pandas as pd
-from shapely.geometry import Point
+#import geopandas as gpd
+#import pandas as pd
+#from shapely.geometry import Point
 import folium
 from streamlit_folium import folium_static
 from file_adjust import clean_dc as dc
