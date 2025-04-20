@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <pubdate>20180105</pubdate>
+                <title>Homeless Shelter Locations</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>The dataset contains locations and attributes of Homeless Shelters, created as part of the DC Geographic Information System (DC GIS) for the D.C. Office of the Chief Technology Officer (OCTO) and participating D.C. government agencies. A database provided by the Department of Human Services identified Homeless Shelter locations.</abstract>
+            <purpose>The dataset contains locations and attributes of Homeless Shelters. This data is used for the planning and management of Washington, D.C. by local government agencies.</purpose>
+        </descript>
+        <spdom>
+            <bounding>
+                <westbc>-77.13</westbc>
+                <eastbc>-76.9</eastbc>
+                <northbc>39.01</northbc>
+                <southbc>38.78</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Human</themekey>
+                <themekey>Services</themekey>
+                <themekey>Health Care</themekey>
+                <themekey>Shelter</themekey>
+                <themekey>Homeless</themekey>
+                <themekey>society</themekey>
+                <themekey>structure</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>health</themekey>
+                <themekey>society</themekey>
+                <themekey>structure</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>DCGIS</placekey>
+                <placekey>DC</placekey>
+                <placekey>DC GIS</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <datacred>Department of Human Services</datacred>
+    </idinfo>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>Entity point</sdtstype>
+                <ptvctcnt>18</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>HomelessShelterPt</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Coordinates defining the features.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>OWNER_RENTER</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>FACILITY_NAME</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>PROVIDER</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>CITY</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>STATE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ZIP</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LATITUDE</attrlabl>
+                <attrdef>MAR Latitude (decimal degrees)</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>LONGITUDE</attrlabl>
+                <attrdef>MAR Longitude (decimal degrees)</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>WARD</attrlabl>
+                <attrdef>Ward</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>TYPE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SUBTYPE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>STATUS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>NUMBER_OF_BEDS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ON_SITE_MEDICAL_CLINIC</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>DGS_CONFIRMED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>DHS_CONFIRMED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>URL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ALREADY_PUBLIC_INFORMATION</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LAST_UPDATED_BY_DHS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>PUBLISH_TO_ODP</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>AGES_SERVED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>HOW_TO_ACCESS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LGBTQ_FOCUSED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>MARID</attrlabl>
+                <attrdef>MAR Unique Identifier</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>XCOORD</attrlabl>
+                <attrdef>MAR X Coordinates (Maryland State Plane Meters)</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>YCOORD</attrlabl>
+                <attrdef>MAR Y Coordinates (Maryland State Plane Meters)</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </distrib>
+        <distliab>See access and use constraints information.</distliab>
+        <custom>DC datasets can be downloaded from "http://opendata.dc.gov".</custom>
+    </distinfo>
+    <metainfo>
+        <metd>20180928</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
