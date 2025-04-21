@@ -2,8 +2,8 @@ import geopandas as gpd
 import pandas as pd
 
 ########################## DEMOGRAPHICS DATA ORGANIZE
-dc_acs = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/District_of_Columbia/ACS_5-Year_Demographic_Characteristics_DC_Ward.shp")
-dc_econ = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/District_of_Columbia/ACS_5-Year_Economic_Characteristics_DC_Ward.shp")
+dc_acs = gpd.read_file("ACS_5-Year_Demographic_Characteristics_DC_Ward.shp")
+dc_econ = gpd.read_file("ACS_5-Year_Economic_Characteristics_DC_Ward.shp")
 #print(dc_econ.columns)
 #verifying geopandas df
 #print(type(dc_acs))
@@ -39,7 +39,7 @@ clean_dc = clean_dc.to_crs(epsg=4326)
 
 
 ########################## SHELTER DATA ORGANIZE
-shelters_dc = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/District_of_Columbia/Homeless_Shelter_Locations.shp")
+shelters_dc = gpd.read_file("Homeless_Shelter_Locations.shp")
 print(shelters_dc.columns)
 
 print(type(shelters_dc))
