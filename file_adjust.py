@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 ########################## DEMOGRAPHICS DATA ORGANIZE
-dc_acs = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/District_of_Columbia/GEOM/ACS_5-Year_Demographic_Characteristics_DC_Ward.shp")
-dc_econ = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/District_of_Columbia/ECON/ACS_5-Year_Economic_Characteristics_DC_Ward.shp")
+dc_acs = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/ACS_5-Year_Demographic_Characteristics_DC_Ward.shp")
+dc_econ = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/ACS_5-Year_Economic_Characteristics_DC_Ward.shp")
 #print(dc_econ.columns)
 #verifying geopandas df
 #print(type(dc_acs))
@@ -40,7 +40,7 @@ clean_dc = clean_dc.to_crs(epsg=4326)
 
 
 ########################## SHELTER DATA ORGANIZE
-shelters_dc = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/District_of_Columbia/SHELTER/Homeless_Shelter_Locations.shp")
+shelters_dc = gpd.read_file("C:/Users/swast/OneDrive/Desktop/PROJECTS/FINAL UT535/Homeless_Shelter_Locations.shp")
 print(shelters_dc.columns)
 
 print(type(shelters_dc))
@@ -53,9 +53,16 @@ print(type(shelters))
 shelters.dropna(subset=['Latitude','Longitude', 'Bed Count'])
 shelters['Bed Count'] = pd.to_numeric(shelters['Bed Count'], errors='coerce')
 
+##prepping for circle markers
 
 #only drop full coordinate duplicates:
 shelters = shelters.drop_duplicates(subset=['Latitude','Longitude'])
 shelters = shelters.to_crs('EPSG:4326') #just in case
 
 ########################## BATHROOM DATA ORGANIZE
+import requests
+
+# Define the URL to the ArcGIS Feature Server
+url = "https://services9.arcgis.com/6EuFgO4fLTqfNOhu/arcgis/rest/services/DC_Public_Restrooms_v2/FeatureServer/0/query?where=1=1&outFields=*&f=geojson"
+
+restrooms = gpd.read_file(url)
