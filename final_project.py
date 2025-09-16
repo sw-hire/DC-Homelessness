@@ -6,7 +6,7 @@ import folium
 from streamlit_folium import folium_static
 from file_adjust import clean_dc as dc
 from file_adjust import shelters
-from file_adjust import restrooms
+#from file_adjust import restrooms
 
 ##makes a choropleth for each demographic charactersitic
 
@@ -31,7 +31,7 @@ with tab2:
     dc_center = [38.9072, -77.0369]
     m = folium.Map(location=dc_center, zoom_start=11)
 
-    show_restrooms = st.checkbox("Show Public Restrooms", value=False)
+    #show_restrooms = st.checkbox("Show Public Restrooms", value=False)
 
     gradient_layer = st.selectbox(
         "Select Demographic:",
@@ -168,7 +168,7 @@ with tab2:
                 popup=folium.Popup(popup_html, max_width=250),
                 icon=folium.Icon(color='blue', icon='info-sign'),
             ).add_to(m)
-    st.title("Map Homelessness and Access to Resources in D.C.")
+    st.title("Mapping Homelessness in D.C.")
 
     folium_static(m)
 

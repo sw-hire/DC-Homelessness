@@ -62,6 +62,6 @@ shelters = shelters.to_crs('EPSG:4326') #just in case
 import requests
 
 # Define the URL to the ArcGIS Feature Server
-url = "https://services9.arcgis.com/6EuFgO4fLTqfNOhu/arcgis/rest/services/DC_Public_Restrooms_v2/FeatureServer/0/query?where=1=1&outFields=*&f=geojson"
+#url = "https://services9.arcgis.com/6EuFgO4fLTqfNOhu/arcgis/rest/services/DC_Public_Restrooms_v2/FeatureServer/0/query?where=1=1&outFields=*&f=geojson"
 
-restrooms = gpd.read_file(url)
+#restrooms = gpd.read_file(url)
