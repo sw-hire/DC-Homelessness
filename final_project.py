@@ -34,12 +34,12 @@ with tab2:
     #show_restrooms = st.checkbox("Show Public Restrooms", value=False)
 
     gradient_layer = st.selectbox(
-        "Select Demographic:",
-        ("", "Black Population per Ward", "Unemployed Population", "Percent of Population in Poverty")
+        "Demographics Based on Permanente article*:",
+        ("Select One", "Black Population per Ward", "Unemployed Population", "Percent of Population in Poverty")
     )
 
     url = "https://www.thepermanentejournal.org/doi/10.7812/TPP/22.096#abstract"
-    st.write("According to an [article](%s) in the Permanente Journal, some of the strongest geographic-level variables positively associated with homelessness risk include: percent of the population Black, unemployed, and in poverty." % url)
+    st.write("*According to an [article](%s) in the Permanente Journal, some of the strongest geographic-level variables positively associated with homelessness risk include: percent of the population Black, unemployed, and in poverty." % url)
 
     if gradient_layer == "Black Population per Ward":
         blackpop_map = folium.Choropleth(
@@ -153,21 +153,20 @@ with tab2:
         ).add_to(m)
 
     ##repeating the process for every restroom
-    if show_restrooms:
-        for _, r in restrooms.iterrows():
-            lat, lon = r.geometry.y, r.geometry.x
-            name = r["NAME"]
-            address = r["ADDRESS"]
+    #if show_restrooms:
+        #for _, r in restrooms.iterrows():
+            #lat, lon = r.geometry.y, r.geometry.x
+            #name = r["NAME"]
+            #address = r["ADDRESS"]
 
-            popup_html = (
-                f"<b>{name}</b><br>"
-                f"{address}<br>"
-            )
-            folium.Marker(
-                location=[lat, lon],
-                popup=folium.Popup(popup_html, max_width=250),
-                icon=folium.Icon(color='blue', icon='info-sign'),
-            ).add_to(m)
+            #popup_html = (
+                #f"<b>{name}</b><br>"
+                #f"{address}<br>")
+            #folium.Marker(
+                #location=[lat, lon],
+                #popup=folium.Popup(popup_html, max_width=250),
+                #icon=folium.Icon(color='blue', icon='info-sign'),
+            #).add_to(m)*#
     st.title("Mapping Homelessness in D.C.")
 
     folium_static(m)
